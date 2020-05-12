@@ -1,0 +1,737 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: #31405b;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+iframe {
+    vertical-align: top;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left; 
+}
+
+.float-right {
+    float: right;
+}
+
+.bg-inner {
+    background-color: #f2f8f6;
+}
+
+.title-medium {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #31405b;
+}
+
+.title-micro {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #31405b;
+}
+
+.button-holder {
+    margin-top: 35px;
+}
+
+.button {
+    outline: none;
+    border: 2px solid #0ac883;
+    box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+
+    display: inline-block;
+    background-color: #0ac883;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    border-radius: 50px;
+
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'PT Sans', sans-serif; 
+    transition: background-color 0.2s ease-in;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2df5ab;
+}
+
+.button:active {
+    background-color: #0baf73;
+}
+
+.button-form {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button:focus {
+    border: 2px solid #0baf73;
+    box-shadow: 0px 0px 10px 0 rgba(9, 151, 99, 0.7);
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------HEADER------------------------------------- */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding-top: 45px;
+
+    background-color: #28534c;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.logo {
+    float: left;
+    width: 270px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation {
+    float: right;
+    width: 870px;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right; 
+}
+
+.navigation-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1170px;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.header-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header-scroll-text {
+    margin-bottom: 12px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+
+/* --------------------------------------- HEADER-INNER --------------------------------------- */
+
+.header-inner {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-image: url(../img/header-inner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------------------------------CONTENT-SECTION-------------------------------------- */
+
+.section-content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.content-row {
+    margin-bottom: 120px;
+}
+
+.content-row:last-child {
+    margin-bottom: 0;
+}
+
+.content-desc {
+    width: 470px;
+}
+
+.content-img {
+    width: 570px;
+}
+
+.content-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 54px;
+    font-weight: 700;
+    color: #31405b;
+}
+
+.content-text {
+    margin-bottom: 40px;
+}
+
+.pop-direction {
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400; 
+    color: #31405b;
+}
+
+.content-text a {
+    color: #138ece;
+}
+
+/* ------------------------------------------------ SECTION-CONTENT-INNER ----------------------------------------------------- */
+
+.section-content-inner {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+/* ---------------------------------------------- TOURS ------------------------------------------------------ */
+
+.tours-title {
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 54px;
+    font-weight: 700;
+    color: #31405b;
+    text-align: center;
+}
+
+.row-cards {
+    margin-bottom: 30px;
+}
+
+.row-cards::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-cards:last-child {
+    margin-bottom: 0;
+}
+
+.card-heading {
+    display: block;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+
+    background-color: #a6a6a6;
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card-heading--tall {
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.gold {
+    background-color: #c1b19b;
+}
+
+.aqua {
+    background-color: #66b0be;
+}
+
+.brown {
+    background-color: #876f56;
+}
+
+.green {
+    background-color: #27695e;
+}
+
+/* ---------------------------------------------------- CONTACTS ----------------------------------------------------- */
+
+.contacts-address {
+    margin-top: 30px;
+    float: left;
+    width: 470px;
+}
+
+.contacts-form {
+    float: right;
+    width: 630px;
+}
+
+.contacts-list {
+    padding: 0;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contacts-list-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contacts-list-item::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: -48px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.contacts-list-item-phone::before {
+    background-image: url(../img/icons/phone-solid.svg);
+}
+
+.contacts-list-item-email::before {
+    background-image: url(../img/icons/envelope-solid.svg);
+}
+
+.contacts-list-item-address::before {
+    background-image: url(../img/icons/map-marker-alt-solid.svg);
+}
+
+.contacts-list-link {
+    text-decoration: none;
+    color: #31405b;
+}
+
+.map-holder {
+    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 1);
+  }
+
+.map-holder img {
+    display: block;
+}  
+
+/* ------------------------------------------ FORM  ------------------------------------------ */
+
+.form {
+    padding: 40px;
+
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 1);
+}
+
+.formgroup {
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    background-color: #eeeeee;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+    
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    color: #31405b;
+}
+
+.input::placeholder {
+    color: rgba(49, 64, 91, 0.5);
+}
+
+.input:focus {
+    outline: 0;
+    border: 2px solid #0ac883;
+    box-shadow: 0px 0px 10px 0 rgba(9, 151, 99, 0.5);  
+}
+
+/* 1-й способ реализации */
+
+/* .input-inline {
+    float: left;
+    margin-right: 10px;
+    width: calc(50% - 5px);
+}
+
+.input-inline:last-child {
+    margin-right: 0;
+} */
+
+/* 2-й способ реализации */
+
+.input-col-50 {
+    float: left;
+    width: 50%;
+}
+
+.input-col-50:first-child {
+    padding-right: 5px;
+}
+
+.input-col-50:last-child {
+    padding-left: 5px;
+}
+
+.label-radio {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    vertical-align: middle;
+    margin-top: -3px;
+
+    background-color: #eeeeee;
+    border-radius: 50%;
+    border: 1px solid rgb(192, 192, 192);
+
+    cursor: pointer;     
+}
+
+.custom-radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    background-color: #2ab698;
+    border-radius: 50%;
+
+    display: none;
+}
+
+.real-radio:checked + .custom-radio::before {
+    display: block;
+}
+
+.real-radio {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.real-radio:focus + .custom-radio {
+    border: 2px solid #0ac883;
+    box-shadow: 0px 0px 10px 0 rgba(9, 151, 99, 0.5);
+}
+
+.label-checkbox {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.real-checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+    border: 2px solid #0ac883;
+    box-shadow: 0px 0px 10px 0 rgba(9, 151, 99, 0.5);
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+    background-color: #eeeeee;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.custom-checkbox::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    content: "";
+    display: block;
+    width: 15px;
+    height: 12px;
+
+    background-image: url(../img/icons/check-solid.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: none;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+    display: block;
+}
+
+/* ------------------------------------------------ TREKKING ------------------------------------------------ */
+
+.tours {
+    width: 270px;
+    float: left;
+    padding-top: 10px;
+}
+
+.tours-list {
+    list-style: none;
+}
+
+.tours-navigation-link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #d6d9d8;
+    text-decoration: none;
+    font-size: 20px;
+    color: #138ece;    
+}
+
+.tours-navigation-link--decorate {
+    border-top: 1px solid #d6d9d8;
+}
+
+.active {
+    color: #e04e4e;
+    font-weight: 700;
+}
+
+.trekking-article {
+    float: right;
+    width: 770px;
+}
+
+.trekking-article p {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.first-text {
+    margin-bottom: 30px !important;
+}
+
+.second-text {
+    margin-top: 30px;
+}
+
+.trekking-article p:last-child {
+    margin-bottom: 0;
+}
+
+.trekking-article a {
+color: #138ece;
+}
+
+/* ------------------------------------------------ FOOTER ------------------------------------------------ */
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #265847;
+    color: #fff;
+}
+
+.footer-left {
+    float: left; 
+    width: 270px;
+}
+
+.footer-right {
+    float: right;
+    max-width: 870px;
+}
+
+.footer-right::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.footer-about {
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.footer-col {
+    float: left;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-col-info {
+    width: 200px;
+}
+
+.footer-col-services {
+    width: 240px;
+}
+
+.footer-col-contacts {
+    width: 200px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-text {
+    margin-bottom: 14px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list-item {
+    margin-bottom: 13px;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list-link:hover {
+    text-decoration: underline;
+}
+
+
+
+  
+
+
